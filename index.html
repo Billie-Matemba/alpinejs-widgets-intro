@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine JS</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    
+    <div x-data="{count:0}">
+        <h1>Counter</h1>
+        <p x-text="count"></p>
+        <button @click="count++">Count Up</button>
+        <button @click="if (count > 0) count--">Count Down</button>
+    </div>
+
+</body>
+</html>
